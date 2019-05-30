@@ -66,6 +66,11 @@ public class MainActivity extends BaseMvpActivity<MeiNvPresenter, MeiNvView, Mei
     }
 
     @Override
+    protected void initData() {
+        myPresenter.getData();
+    }
+
+    @Override
     public void onFail(String mag) {
 
     }
